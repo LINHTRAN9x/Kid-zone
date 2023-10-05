@@ -166,6 +166,12 @@ body {
     gap: 5em;
 }
 
+.product-container .product-item:hover{
+    transition: all 0.6s ease;
+    box-shadow: 0 0 20px rgba(36, 32, 32, 0.4);
+}
+
+
 .product-container img{
     width: 39vw !important;
     height: auto;
@@ -264,16 +270,16 @@ main .showmore a:hover{
     font-size: 1.9em;
     
 }
-.fa-twitter:hover{
+.fa-twitter{
    color: #1D9BF0;
 }
-.fa-instagram:hover{
+.fa-instagram{
     color: #F50569;
 }
-.fa-facebook:hover{
+.fa-facebook{
     color: #4867AA;
 }
-.fa-youtube:hover{
+.fa-youtube{
     color: #FF0000;
 }
 .footer-icons .footer-icon a{
