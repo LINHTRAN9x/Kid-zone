@@ -32,7 +32,7 @@ body {
 }
 
 .store-header{
-    background-color: #ffdfb9bf;
+    background: linear-gradient(166deg,#ffdfb9bf,#FFFFB9 60%,#BAFFC9 20%);
 }
 
 
@@ -287,7 +287,7 @@ main .showmore a:hover{
 }
 .footer-item button{
     border: none;
-    background-color: #FFDFB9;
+    background-color: #fff8b930;
 }
 
 .footer-item a{
@@ -335,7 +335,7 @@ main .showmore a:hover{
 }
 
 .store-footer{
-    background-color: #FFDFB9;
+    background: linear-gradient(127deg,#BAFFC9, #FFFFB9 6%, #FFDFB9 60%);
 }
 
 .store-footer a.last-footer{
