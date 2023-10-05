@@ -1,3 +1,8 @@
+$(window).on('load', function() {
+    $('body').animate({
+        opacity: 1
+    })});
+
 
 $('.btn-pop-up').on('click', function() {
     $('.pop-up-container').addClass('show');
