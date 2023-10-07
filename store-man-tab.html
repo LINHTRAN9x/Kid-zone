@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid Zone Store</title>
+    <title>KidZone Product</title>
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/Store.css" />
@@ -15,8 +15,8 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/all.js"></script>
-    <script src="./js/style.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 </head>
 <body>
     <header class="store-header">
@@ -27,7 +27,7 @@
             <div class="slide-menu-container container">
                 <div class="slide-menu p-4 container">
                     <div class="slide-menu-logo d-flex justify-content-between align-items-center">
-                        <img src="./img/storeImg/Kiz-zone-logo.png" alt="" width="93px" height="34px">
+                        <img src="./img/storeImg/Kiz-zone-logo.png" alt="" width="85px" height="34px">
                         <div id="close-btn">
                         <i class="fa-solid fa-xmark fs-2"></i>
                         </div>
@@ -42,7 +42,7 @@
                         
                         <div class="slide-menu-dropdown-item collapse" id="collapseExample_1">
                             <div class="d-flex flex-column align-items-start gap-2 fs-5 ps-4">
-                                <a href="store-man-tab.html">All</a>
+                                <a href="#">All</a>
                                 <a href="#">T-Shirts</a>
                                 <a href="#">Hoodies & Sweatshirts</a>
                                 <a href="#">Long Sleeve Shirts</a>
@@ -59,7 +59,7 @@
                         
                         <div class="slide-menu-dropdown-item collapse" id="collapseExample_2">
                             <div class="d-flex flex-column align-items-start gap-2 fs-5 ps-4">
-                                <a href="store-man-tab.html">All</a>
+                                <a href="#">All</a>
                                 <a href="#">T-Shirts</a>
                                 <a href="#">Hoodies & Sweatshirts</a>
                                 <a href="#">Long Sleeve Shirts</a>
@@ -76,7 +76,7 @@
                         
                         <div class="slide-menu-dropdown-item collapse" id="collapseExample_3">
                             <div class="d-flex flex-column align-items-start gap-2 fs-5 ps-4">
-                                <a href="store-man-tab.html">All</a>
+                                <a href="#">All</a>
                                 <a href="#">Kids' Shirts</a>
                                 <a href="#">Hoodies & Sweatshirts</a>
                                 
@@ -92,7 +92,7 @@
                         
                         <div class="slide-menu-dropdown-item collapse" id="collapseExample_4">
                             <div class="d-flex flex-column align-items-start gap-2 fs-5 ps-4">
-                                <a href="store-man-tab.html">All</a>
+                                <a href="#">All</a>
                                 <a href="#">Caps & Hats</a>
                                 <a href="#">Bags & Backpacks</a>
                                 <a href="#">Mugs & Drinkware</a>
@@ -114,7 +114,7 @@
                         
                         <div class="slide-menu-dropdown-item collapse" id="collapseExample_5">
                             <div class="d-flex flex-column align-items-start gap-2 fs-5 ps-4">
-                                <a href="store-man-tab.html">All</a>
+                                <a href="#">All</a>
                                 <a href="#">Sticker</a>
                                 
                         </div>
@@ -129,7 +129,7 @@
                         
                         <div class="slide-menu-dropdown-item collapse" id="collapseExample_6">
                             <div class="d-flex flex-column align-items-start gap-2 fs-5 ps-4">
-                                <a href="store-man-tab.html">All</a>
+                                <a href="#">All</a>
                                 <a href="#">Posters</a>
                             
                         </div>
@@ -182,27 +182,27 @@
                     <i class="fa-solid fa-angle-down"></i>
                     <div class="dropdown_menu">
                         <div class="dropdown_item"><span class="fw-bold">Men</span>
-                            <a href="store-man-tab.html">All</a>
+                            <a href="#">All</a>
                             <a href="#">T-Shirts</a>
                             <a href="#">Hoodies & Sweatshirts</a>
                             <a href="#">Long Sleeve Shirts</a>
                             <a href="#">Sportswear</a>
                         </div>
                         <div class="dropdown_item"><span class="fw-bold">Women</span>
-                            <a href="store-man-tab.html">All</a>
+                            <a href="#">All</a>
                             <a href="#">T-Shirts</a>
                             <a href="#">Hoodies & Sweatshirts</a>
                             <a href="#">Long Sleeve Shirts</a>
                             <a href="#">Sportswear</a>
                         </div>
                         <div class="dropdown_item"><span class="fw-bold">Kids & Babies</span>
-                            <a href="store-man-tab.html">All</a>
+                            <a href="#">All</a>
                             <a href="#">Kids' Shirts</a>
                             <a href="#">Hoodies & Sweatshirts</a>
                             
                         </div>
                         <div class="dropdown_item"><span class="fw-bold">Accessories</span>
-                            <a href="store-man-tab.html">All</a>
+                            <a href="#">All</a>
                             <a href="#">Caps & Hats</a>
                             <a href="#">Bags & Backpacks</a>
                             <a href="#">Mugs & Drinkware</a>
@@ -213,59 +213,139 @@
                             <a href="#">Other</a>
                         </div>
                         <div class="dropdown_item"><span class="fw-bold">Stickers</span>
-                            <a href="store-man-tab.html">All</a>
+                            <a href="#">All</a>
                             <a href="#">Sticker</a>
 
                         </div>
                         <div class="dropdown_item"><span class="fw-bold">Wall Prints</span>
-                            <a href="store-man-tab.html">All</a>
+                            <a href="#">All</a>
                             <a href="#">Posters</a>
                         </div>
                     </div>
                 </div>
-                <div class="fw-bold"><a class="text-decoration-none text-black " href="#" style="--bs-text-opacity: .88;">About Us</a></div>
+                <div class="fw-bold"><a class="text-decoration-none text-black " href="" style="--bs-text-opacity: .88;">About Us</a></div>
             </div>
         </div>
-        <div class="heder-banner-img">
-            <img src="./img/storeImg/store-banner.png" alt="">
-        </div>
     </header>
-    <main class="main-container pt-5">
-        <img class="svg-background" src="./img/storeImg/svg-background-top.jpg" alt="">
-        <h1 class="text-center fw-bold">Product Preview</h1>
-        <div class="product-container pt-5">
-            <a href="store-man-tab.html" class="product-item position-relative">
-                <img src="./img/storeImg/abcya-logo-kids-premium-t-shirt.jpg" alt="">
-                <div class="product-info">
-                    <div class="product-name">ABCya Logo - Kids' Premium T-Shirt</div>
-                    <div class="product-price"><strong>$21.49</strong></div>
-                </div>
-            </a>
-            <a href="store-man-tab.html" class="product-item position-relative">
-                <img src="./img/storeImg/abcya-pizza-mens-premium-t-shirt.jpg" alt="">
-                <div class="product-info">
-                    <div class="product-name">ABCya Pizza - Men's Premium T-Shirt</div>
-                    <div class="product-price"><strong>$25.99</strong></div>
-                </div>
-            </a>
-            <a href="store-man-tab.html" class="product-item position-relative">
-                <img src="./img/storeImg/cosmic-abcya-womens-premium-t-shirt.jpg" alt="">
-                <div class="product-info">
-                    <div class="product-name">Cosmic ABCya - Women's Premium T-Shirt</div>
-                    <div class="product-price"><strong>$25.99</strong></div>
-                </div>
-            </a>
-            <a href="store-man-tab.html" class="product-item position-relative">
-                <img src="./img/storeImg/abcya-cast-poster-18x24.jpg" alt="">
-                <div class="product-info">
-                    <div class="product-name">ABCya Cast - Poster 18x24</div>
-                    <div class="product-price"><strong>$15.99</strong></div>
-                </div>
-            </a>
+   
+    <div ng-view></div><a href="#/"></a>
+    <!-- <section class="men-main-container">
+        <div class="d-flex gap-1 container">
+            <a href="#/">HOME</a>
+            <p>></p>
+            <a href="">MEN</a>
         </div>
-        <div class="showmore"><a href="store-man-tab.html">Show more</a></div>
-        <img class="svg-background-bottom" src="./img/storeImg/svg-background-bottom.jpg" alt="">
-    </main>
+        <div class="men-container container">
+            <div class="row">
+            <div class="col-3 border fs-5 lh-lg">
+                <ul>
+                    <li><a class="text-decoration-underline fw-bold" href="">Men</a>
+                        <ul class="ps-4">
+                            <li><a href="#/store-man-tab-tshirts">T-Shirts</a></li>
+                            <li><a href="">Hoodies & Sweatshirts</a></li>
+                            <li><a href="">Long Sleeve Shirts</a></li>
+                            <li><a href="">Sportswear</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Women</a>
+                       
+                    </li>
+                    <li><a href="">Kids & Babies</a>
+                        
+                    </li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Stickers</a></li>
+                    <li><a href="">Wall Prints</a></li>
+                </ul>
+            </div>
+
+            <div class="col-9 ">
+                <div class="item-men-container">
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-1.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color green color-selection"></div>
+                            <div class="item-color blue color-nonselection"></div>
+                            <div class="item-color gray color-nonselection"></div>
+                            <div class="item-color light-gray color-nonselection"></div>
+                            <div class="item-color light-dark color-nonselection"></div>
+                        </div>
+                        <h4 class="text-center">ABCya Pizza - Men's Premium T-Shirt</h4>
+                        <div class="text-center fs-4">$25.99</div>
+                    </div>
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-2.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color black color-selection"></div>
+                            
+                        </div>
+                        <h4 class="text-center">Cosmic ABCya - Men's Premium Hoodie</h4>
+                        <div class="text-center fs-4">$49.99</div>
+                    </div>
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-3.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color black color-selection"></div>
+                            <div class="item-color light-dark color-nonselection"></div>
+                            <div class="item-color royal-blue color-nonselection"></div>
+                            <div class="item-color white color-nonselection"></div>
+                            
+                        </div>
+                        <h4 class="text-center">ABCya Logo - Snapback Baseball Cap</h4>
+                        <div class="text-center fs-4">$20.99</div>
+                    </div>
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-4.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color black color-selection"></div>
+                            <div class="item-color blue color-nonselection"></div>
+                           
+                        </div>
+                        <h4 class="text-center">Too School For Cool - Men's Premium T-Shirt</h4>
+                        <div class="text-center fs-4">$25.99</div>
+                    </div>
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-5.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color white color-selection"></div>
+                            <div class="item-color light-gray color-nonselection"></div>
+                            <div class="item-color green color-nonselection"></div>
+                         
+                        </div>
+                        <h4 class="text-center">Pop Art Fuzzbugs - Men's Premium T-Shirt</h4>
+                        <div class="text-center fs-4">$26.99</div>
+                    </div>
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-6.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color yellow color-selection"></div>
+                            <div class="item-color blue color-nonselection"></div>
+                            <div class="item-color light-dark color-nonselection"></div>
+                            <div class="item-color red color-nonselection"></div>
+
+                        </div>
+                        <h4 class="text-center">ABCya Pizza - Men's Premium T-Shirt</h4>
+                        <div class="text-center fs-4">$25.99</div>
+                    </div>
+                    <div class="container d-flex flex-column gap-3">
+                        <img src="./img/storeImg/store-man-img/man-item-3.jpg" alt="">
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <div class="item-color black color-selection"></div>
+                            <div class="item-color light-dark color-nonselection"></div>
+                            <div class="item-color royal-blue color-nonselection"></div>
+                            <div class="item-color white color-nonselection"></div>
+                            
+                        </div>
+                        <h4 class="text-center">ABCya Logo - Snapback Baseball Cap</h4>
+                        <div class="text-center fs-4">$20.99</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </section>  -->
+    
     <footer class="store-footer w-100">
         <div class="footer-menu">
             <div class="footer-item">
@@ -325,6 +405,9 @@
             Open Your Free Spreadshop Now
         </a>
     </footer>
-    <script src="js/store.js"></script>
+    
+    <script src="./js/store-man.js"></script>
+    <script src="./js/store.js"></script>
+    
 </body>
 </html>
