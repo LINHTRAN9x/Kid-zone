@@ -160,6 +160,18 @@
     height: auto;
 }
 
+.search-allProducts{
+    border: 1px solid #000;
+    padding: .2em;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.search-allProducts:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
 /* @media (max-width: 567px){
     .item-men-container{
         display: grid;
