@@ -79,7 +79,6 @@
     height: 18px;
     border-radius: 50%;
 }
-
 .item-allProducts-container .item-color:hover{
     outline: 1px solid #000;
     border: 1px solid #fff;
@@ -89,7 +88,6 @@
     outline: 1px solid #000;
     border: 1px solid #fff;
 }
-
 .item-allProducts-container img{
     width: 100%;
     height: 100%;
@@ -109,6 +107,12 @@
     transition: all .2s ease;
     font-weight: bold;
     filter: contrast(1.1);
+}
+.item-allProducts-container .item:hover h4{
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    text-overflow: unset;
+    transition: all 0.4s ease;
 }
 
 .item-men-container img{
@@ -130,6 +134,13 @@
     transition: all .2s ease;
     font-weight: bold;
     filter: contrast(1.1);
+}
+
+.item-men-container .item:hover h4{
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    text-overflow: unset;
+    transition: all 0.4s ease;
 }
 
 .col-3.border.fs-5.lh-lg {
