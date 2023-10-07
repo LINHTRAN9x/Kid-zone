@@ -79,6 +79,17 @@
     height: 18px;
     border-radius: 50%;
 }
+
+.item-allProducts-container .item-color:hover{
+    outline: 1px solid #000;
+    border: 1px solid #fff;
+}
+
+.item-men-container .item-color:hover{
+    outline: 1px solid #000;
+    border: 1px solid #fff;
+}
+
 .item-allProducts-container img{
     width: 100%;
     height: 100%;
