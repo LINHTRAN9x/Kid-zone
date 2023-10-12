@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="createRandomId.js"></script>
+    <script src="./product.js"></script>
+</head>
+<body>
+    <div>
+        <label for="img">imgSrc</label>
+        <input type="text" id="img">
+        <br>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <br>
+        <label for="price">Price</label>
+        <input type="text" id="price">
+        <br>
+        <button onclick="createProduct()">create product to local</button>
+    </div>
+    
+
+    <script>
+        var listProduct = JSON.parse(localStorage.getItem('listProduct'));
+        if(listProduct == null) {
+            listProduct = new Array();
+        }
+        console.log(listProduct);
+
+
+
+        function createProduct(){
+            var nodeImg = document.getElementById('img');
+            var img = nodeImg.value;
+            nodeImg.value = '';
+
+            var nodeName = document.getElementById('name');
+            var name = nodeName.value;
+            nodeName.value = '';
+
+            var nodePrice = document.getElementById('price');
+            var price = nodePrice.value;
+            nodePrice.value = '';
+
+            var product = productContructor(img, name , price,null);
+
+            listProduct.push(product);
+
+            var jsonListproduct = JSON.stringify(listProduct);
+            localStorage.setItem('listProduct', jsonListproduct);
+         
+        }
+    </script>
+</body>
+</html>
