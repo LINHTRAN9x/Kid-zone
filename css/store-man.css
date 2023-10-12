@@ -67,6 +67,7 @@
     place-items: center;
     gap: 2em 1em;
     cursor: pointer;
+    position: relative;
 }
 .item-allProducts-container .item-color{
     width: 18px;
@@ -113,6 +114,33 @@
     -webkit-line-clamp: unset;
     text-overflow: unset;
     transition: all 0.4s ease;
+}
+
+.item-allProducts-container button{
+    border: none;
+    background: #1E9658;
+    padding: .5em .9em;
+    color: #fff;
+    border-radius: 21px;
+}
+.item-allProducts-container button:hover{
+    opacity: .7;
+}
+
+.item-allProducts-container button:active{
+    transition: all 1s ease;
+    animation: toCart .10ms linear forwards alternate;
+}
+@keyframes toCart {
+    form{
+        transform: rotateX(10deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotateX(20deg);
+        opacity: 1;
+    }
+    
 }
 
 .item-men-container img{
@@ -172,6 +200,173 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+/* CART-section */
+.cart-wraper a{
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-wraper .item-info{
+    height: 150px;
+}
+
+
+.cart-wraper .delete-cartItem{
+    font-size: 2em;
+}
+.cart-wraper .delete-cartItem:hover{
+    color: #1E9658;
+}
+.cart-wraper .delete-cartItem:active{
+    color: #000;
+}
+
+/* .cart-wraper input{
+   border: none;
+   background-color: #1E9658;
+   color: #fff;
+   font-size: 2em;
+   text-align: center;
+} */
+/*************** Quantity-Input_custom ****************/
+.quantity {
+    position: relative;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]
+  {
+    --moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: #1E9658;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7em;
+    border: 1px solid #eee;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 0;
+    border-bottom: 1px solid #eee;
+  }
+  .quantity-button.quantity-up:hover{
+    background-color: gray;
+    color: #000;
+    
+  }
+  .quantity-button.quantity-down:hover{
+    background-color: gray;
+    color: #000;
+  }
+  .quantity-button.quantity-up:active{
+    opacity: .5;
+    
+  }
+  .quantity-button.quantity-down:active{
+    opacity: .5;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    bottom: -1px;
+    height: 50%;
+  }
+
+/*********** QUANTITY_INPUT_CUSTOM_END *************  */
+
+.cart-wraper .list-item:hover{
+    border: 1px solid #6D6860;
+}
+
+
+.checkout-logo{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #c2b7b7;
+    padding: 1em 0 2em;
+    width: 20em;
+    font-weight: 500;
+    gap: 1em;
+}
+.totalPrice-container{
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    left: 50%;
+    padding: 3em 1.5em;
+    cursor: pointer;
+}
+.totalPrice-container button{
+    border: none;
+    font-size: 1.6em;
+    padding: 1em;
+    font-weight: bold;
+    background: aquamarine;
+}
+.totalPrice-container button:active{
+    opacity: 0.6;
+}
+.category-nav-left{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.list-item-container{
+    position: relative;
+    z-index: 999;
+}
+.cart-container h4{
+    position: absolute;
+    top: 0;
+    left: 3%;
+    z-index: 9;
+    color: gray;
+}
 /* @media (max-width: 567px){
     .item-men-container{
         display: grid;

@@ -114,6 +114,7 @@ body {
 .store-icon-container button:hover{
     box-shadow: 0px 2px 0px 0px #12CCA8;
     transition: all 0.4s ease;
+    
 }
 
 .search-container input#search {
@@ -161,7 +162,7 @@ body {
 }
 .store-navigation .dropdown_container:hover .shop-btn{
     color: #12CCA8;
-   
+    border-bottom: 2px solid #12CCA8;
 }
 
 .store-navigation .dropdown_menu{
