@@ -1,7 +1,7 @@
 $(window).on('load', function() {
     $('body').animate({
         opacity: 1
-    },1000)});
+    },200)});
 
 
 $('.btn-pop-up').on('click', function() {
