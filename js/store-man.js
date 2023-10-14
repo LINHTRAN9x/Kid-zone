@@ -1,4 +1,4 @@
-var app = angular.module('myApp',['ngRoute']);
+var app = angular.module('myStore',['ngRoute']);
 
 app.config(function($routeProvider){
     $routeProvider
@@ -82,6 +82,7 @@ app.controller('myCtrl',function($scope){
 
         //lay ds item gio hang 
         var listItemCart = getListItemCartOnLocalStorage();
+        var addProductPopup = document.querySelector('.add-product-popup');
 
         //them item vao cart
         var isListItemCart = false;
@@ -102,8 +103,11 @@ app.controller('myCtrl',function($scope){
         //save to local storage
         saveListItemCartToLocalStorage(listItemCart)
 
-        alert("Add to Cart successfully");
-
+        // alert("Add to Cart successfully");
+        addProductPopup.classList.add("show");
+        setTimeout(function() {
+            addProductPopup.classList.remove("show");
+        }, 2000);
     };
 });
 // app.controller('myCtrl',function($scope){
