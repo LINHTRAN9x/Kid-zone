@@ -231,9 +231,9 @@
         </div>
         
     </header>
-   
+
     <section class="cart-wraper py-5">
-        <div class="d-flex gap-1 container fw-bold fs-5">
+        <div class="d-flex gap-1 container fw-bold fs-4">
             <a href="Kidzone-store-tab.html">HOME</a>
             <p>></p>
             <a href="#/">SHOPPING CART</a>
@@ -387,23 +387,23 @@
             
             
 
-            var html = '<div class="list-item d-flex gap-2">\n'+
-            '              <img src="'+ product.img +'" alt="" width="150px" height="150px">\n'+
-            '              <div class="item-info d-flex flex-column align-items-start justify-content-between">\n'+
-            '                  <div>\n'+
-            '                      <h2>'+ product.name +'</h2>\n'+
-            '                      <p class="item-price">$'+ totalPrice +'</p> \n'+
-            '                  </div>\n'+
-            '                  \n'+
-            '                  <div class="d-flex flex-row-reverse justify-content-between gap-5">\n'+
-            '                      <i onClick=removeItemFromLocalStorage(\''+ item.idProduct +'\') class="delete-cartItem fa-regular fa-trash-can"></i>\n'+
-            '                     <div class="quantity">\n'+
-            '                      <input onchange="updateQty(\''+ item.idProduct +'\', this.value)" class="qty" type="number" min="1" value="'+ item.qty +'">\n'+
-            '                     </div>\n' +
-            '                  </div>\n'+
-            '                  \n'+
-            '              </div>\n'+
-            '          </div>';;
+            var html =  `<div class="list-item d-flex gap-2">
+                          <img src=" ${product.img} " alt="" width="150px" height="150px">
+                          <div class="item-info d-flex flex-column align-items-start justify-content-between">
+                              <div>
+                                  <h2>${product.name}</h2>
+                                  <p class="item-price fs-5">$${totalPrice}</p> 
+                              </div>
+                              
+                              <div class="d-flex flex-row-reverse justify-content-between gap-5">
+                                  <i onClick=removeItemFromLocalStorage('${item.idProduct}') class="delete-cartItem fa-regular fa-trash-can"></i>
+                                 <div class="quantity">
+                                  <input onchange="updateQty('${item.idProduct}', this.value)" class="qty" type="number" min="1" value="${item.qty}">
+                                 </div>
+                              </div>
+                              
+                          </div>
+                      </div>';`
 
             return html;
         }
@@ -444,7 +444,6 @@
         // Đếm số lượng sản phẩm trong container và hiển thị trong giỏ hàng
         function updateCartItemCount() {
             var itemCount = itemContainer.querySelectorAll('.list-item').length;
-            console.log(itemCount);
             // Hiển thị số lượng sản phẩm trong giỏ hàng
             var cartItemCountElement = document.getElementById('cart-item-count');
             if (cartItemCountElement) {
