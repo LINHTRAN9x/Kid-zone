@@ -1,4 +1,5 @@
 @import './store-man.css';
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600;700&display=swap");
 
 *,
 ::after,
@@ -29,7 +30,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Baloo Paaji 2", cursive;
+  font-family: 'Baloo Paaji 2', sans-serif !important;
   overflow-x: hidden;
   opacity: 0;
   transition: all 1s ease-in-out;
@@ -145,7 +146,7 @@ body {
 }
 .navigation-container{
      position: relative;
-     font-size: 1.5em;
+     font-size: 1.6em;
      z-index: 999;
 }
 
@@ -164,6 +165,40 @@ body {
     color: #12CCA8;
     border-bottom: 2px solid #12CCA8;
 }
+
+.add-product-popup{
+    position: fixed;
+    top: 24px;
+    right: 0;
+    background-color: #00ffcc;
+    padding: 1.5em;
+    font-size: 1.3em;
+    transform: translateX(300px);
+    opacity: 0;
+    z-index: 9999;
+}
+.add-product-popup.show{
+    animation: show 2s linear forwards;
+}
+@keyframes show {
+    20%{
+        transform: translateX(100px);
+    opacity: 0.3;
+    }
+    40%{
+        transform: translateX(50px);
+    opacity: 0.9;
+    }
+    80%{
+        transform: translateX(0px) !important;
+        opacity: 1;
+    }
+    99%{
+        transform: none;
+        opacity: 0;
+    }
+}
+
 
 .store-navigation .dropdown_menu{
     background-color: #fff;
@@ -283,7 +318,7 @@ main .showmore a:hover{
     border-bottom: 1px solid #c2b7b7;
     padding: 1em 0 2em;
     font-size: 1.6em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .footer-item{
@@ -294,6 +329,7 @@ main .showmore a:hover{
 .footer-item button{
     border: none;
     background-color: #fff8b930;
+    font-weight: 600;
 }
 
 .footer-item a{
